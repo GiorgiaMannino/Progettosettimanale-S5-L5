@@ -1,0 +1,475 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #191919;
+}
+
+/* REGOLE GENERICHE PER TUTTI I BLOCCHI */
+
+.firstBlock {
+  background-color: #ffc017;
+  padding-bottom: 3em;
+  padding: 0;
+}
+
+.secondBlock,
+.thirdBlock {
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  max-width: 85%;
+}
+
+/* PRIMO BLOCCO */
+
+/* header*/
+
+.firstBlock header {
+  margin: auto;
+  max-width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.firstBlock nav {
+  padding: 0.7em 0;
+  max-width: 80%;
+  display: flex;
+  justify-content: right;
+  gap: 5px;
+}
+
+/* Stile per ogni elemento del menu */
+nav ul li {
+  display: inline-block;
+  font-size: 0.8em;
+  text-align: center;
+  border-radius: 50px;
+  padding: 0.7rem 0.5rem;
+  flex-grow: 1;
+}
+
+/* Prendo il 5 elemento*/
+nav ul li:nth-child(5) {
+  background-color: #191919;
+  color: white;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 0.7rem 1rem;
+  flex-grow: 1;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #191919;
+  margin: 0;
+}
+
+/* Sezione hero*/
+
+.heroSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1em;
+  margin: auto;
+  max-width: 85%;
+}
+
+.heroSection > div:nth-of-type(1) {
+  width: 80%;
+}
+
+.heroSection h1 {
+  font-family: "Sectral", serif;
+  font-weight: 500;
+  font-size: 3.5em;
+  padding-top: 1em;
+  padding-bottom: 0.3em;
+}
+
+.heroSection button {
+  font-family: "Roboto", sans-serif;
+  background-color: #191919;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 0.5rem 3rem;
+  margin-top: 2.5em;
+  margin-bottom: 4em;
+}
+
+.heroSection P {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9em;
+}
+
+.heroSection > div:nth-of-type(2) {
+  width: 80%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* SECONDO BLOCCO */
+
+.secondBlock {
+  row-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 2em;
+}
+
+body > div:nth-child(2) {
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  max-width: 85%;
+  padding-top: 2.5em;
+  padding-bottom: 0.5em;
+}
+
+body > div:nth-child(2) img {
+  padding-right: 0.3em;
+  vertical-align: middle;
+}
+body > div:nth-child(2) h3 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* primo div della classe secondBlock */
+
+.card {
+  font-size: 0.7em;
+  width: 32%;
+  display: flex;
+  gap: 10px;
+}
+
+.number {
+  color: #d8d8d8;
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+/* secondo div della classe secondBlock */
+
+.cardInformation img {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  max-width: 15px;
+  height: auto;
+  object-fit: cover;
+  margin-right: 0.4em;
+}
+
+.cardInformation > div:nth-child(1) p {
+  vertical-align: middle;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.cardInformation > p {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 0.8em 0;
+}
+
+.cardInformation > div:nth-child(3) p {
+  display: inline-block;
+  color: rgb(104, 104, 104);
+}
+
+body hr {
+  border: none;
+  height: 1px;
+  background-color: #19191936;
+}
+
+/* TERZO BLOCCO- tutti gli articole*/
+
+.thirdBlock {
+  padding-top: 3.5em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 0.7em;
+  gap: 50px;
+}
+
+.allArticles {
+  width: 75%;
+}
+
+.thirdBlock article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  column-gap: 30px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 3.2em;
+}
+.imageArticle div img {
+  position: absolute;
+  max-width: 65%;
+  height: auto;
+  padding-left: 2em;
+}
+.imageArticle img {
+  position: relative;
+  max-height: 103px;
+  inset: 0;
+}
+
+.thirdBlock article > div > div > img {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  max-width: 20px;
+  height: auto;
+  object-fit: cover;
+  margin-right: 0.4em;
+}
+
+.thirdBlock article > div > div > p {
+  color: #191919;
+  vertical-align: middle;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.thirdBlock article > div h3 {
+  font-weight: bold;
+  font-size: 1.6em;
+  padding: 0.5em 0;
+}
+
+.thirdBlock article p {
+  color: rgb(104, 104, 104);
+  display: inline-block;
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+.thirdBlock article > div > div:last-of-type p:last-of-type {
+  background-color: #e7e7e7;
+  padding: 0.5em 0.6em;
+  border-radius: 15px;
+  margin-top: 0.6em;
+}
+
+.thirdBlock article > div > div:last-of-type img {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+article > div:first-child {
+  width: 100%;
+}
+
+article .prova {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* TERZO BLOCCO - aside */
+
+aside {
+  align-content: center;
+  max-width: 25%;
+  position: sticky;
+  top: 0;
+}
+aside h3 {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 1.5em 0;
+}
+
+aside > div:first-child {
+  display: inline-block;
+}
+
+aside div p {
+  font-size: 0.8em;
+  display: inline-block;
+  padding: 0.8em 0.8em;
+  margin-bottom: 0.7em;
+  color: rgb(104, 104, 104);
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 3px;
+}
+
+aside div p:hover {
+  cursor: pointer;
+  background-color: #d6d6d6;
+}
+
+aside hr {
+  border: none;
+  height: 1px;
+  background-color: #19191936;
+  margin: 1.5em 0;
+}
+aside a {
+  font-size: 0.8em;
+  color: rgb(104, 104, 104);
+  margin-right: 1em;
+  text-decoration: none;
+}
+
+/* small screen -  regole da 0px fino a 575px*/
+@media screen and (max-width: 575px) {
+  .firstBlock header {
+    margin: auto;
+    max-width: 90%;
+  }
+  .secondBlock,
+  .thirdBlock {
+    margin: auto;
+    max-width: 90%;
+  }
+
+  nav ul li:nth-child(1),
+  nav ul li:nth-child(2),
+  nav ul li:nth-child(3) {
+    display: none;
+  }
+
+  .heroSection {
+    margin: auto;
+    max-width: 90%;
+  }
+
+  .heroSection > div:nth-of-type(1) {
+    width: 100%;
+    font-size: 0.8em;
+  }
+
+  .heroSection > div:nth-of-type(2) {
+    display: none;
+  }
+
+  body > div:nth-child(2) {
+    max-width: 90%;
+  }
+
+  .secondBlock {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .card {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding-right: 3em;
+  }
+
+  .thirdBlock {
+    padding-top: 3em;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .allArticles {
+    margin-top: 1em;
+    width: 100%;
+  }
+
+  /* Articoli */
+
+  .thirdBlock article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    column-gap: 15px;
+
+    border: 1px solid black;
+  }
+
+  .thirdBlock article > div:first-of-type {
+    width: 100%; /* Adatta le immagini alla metà del contenitore */
+    height: auto; /* Mantieni le proporzioni */
+    background-color: aqua;
+    flex-basis: auto;
+  }
+
+  aside {
+    align-content: center;
+    max-width: 100%;
+    position: relative;
+    order: -1;
+  }
+
+  aside > div {
+    width: 100%;
+  }
+}
+
+/* medium screen - regole da 576 a  768px  */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .firstBlock header {
+    margin: auto;
+    max-width: 90%;
+  }
+  .secondBlock,
+  .thirdBlock {
+    margin: auto;
+    max-width: 90%;
+  }
+
+  .heroSection > div:nth-of-type(1) h1 {
+    font-size: 3.5em;
+  }
+
+  .card {
+    font-size: 0.7em;
+    width: 49%;
+    display: flex;
+    gap: 10px;
+    padding-right: 3em;
+  }
+
+  .thirdBlock {
+    padding-top: 3em;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  .allArticles {
+    margin-top: 1em;
+    width: 100%;
+  }
+  body > div:nth-child(2) {
+    max-width: 90%;
+  }
+
+  aside {
+    align-content: center;
+    max-width: 100%;
+    position: relative;
+  }
+
+  aside > div {
+    width: 90%;
+  }
+
+  aside > div p {
+    margin-right: 0.8em;
+    margin-bottom: 1.2em;
+  }
+}
